@@ -19,17 +19,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a class="site-list__link">
                 Подбор программы
               </a>
             </li>
@@ -46,6 +46,8 @@
 
             <fieldset class="program__form-group form-info">
               <legend class="form-info__title">Подбор программы</legend>
+              <p class="form-info__subtitle">Заполните анкету, и мы подберем
+                программу питания для вашего кота</p>
               <p class="form-info__field-group">
                 <label class="form-info__label" for="name">Имя:*</label>
                 <input class="form-info__input" type="text" id="name" name="name" value="Барсик" required>
@@ -139,7 +141,7 @@
         </div>
       </section>
 
-      <section class="location">
+      <section class="location location--dark">
         <div class="location__description adress-text">
           <h2 class="visually-hidden">Наше местоположение.</h2>
           <p class="adress-text__title">Приглашаем к сотрудничеству дилеров!</p>
@@ -164,13 +166,19 @@
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
               </li>
             </ul>
           </div>
