@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
@@ -18,17 +19,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a class="site-list__link">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Подбор программы
               </a>
             </li>
@@ -214,7 +215,7 @@
           <h2 class="more-products__title">Дополнительные товары</h2>
           <ul class="more-products__list">
             <li class="more-products__card">
-              <h3 class="more-products__title">Сахарозаменитель</h3>
+              <h3 class="more-products__subtitle">Сахарозаменитель</h3>
               <div class="more-products__description products-text">
                 <p class="products-text__info">1 упаковка (100 г)</p>
                 <p class="products-text__number">200 Р.</p>
@@ -222,7 +223,7 @@
               <a class="more-products__button" href="#">Заказать</a>
             </li>
             <li class="more-products__card">
-              <h3 class="more-products__title">Питьевая вода</h3>
+              <h3 class="more-products__subtitle">Питьевая вода</h3>
               <div class="more-products__description products-text">
                 <p class="products-text__info">5 литров</p>
                 <p class="products-text__number">50 Р.</p>
@@ -230,7 +231,7 @@
               <a class="more-products__button" href="#">Заказать</a>
             </li>
             <li class="more-products__card">
-              <h3 class="more-products__title">Молоко</h3>
+              <h3 class="more-products__subtitle">Молоко</h3>
               <div class="more-products__description products-text">
                 <p class="products-text__info">1 литр</p>
                 <p class="products-text__number">100 Р.</p>
@@ -238,7 +239,7 @@
               <a class="more-products__button" href="#">Заказать</a>
             </li>
             <li class="more-products__card">
-              <h3 class="more-products__title">Витамины</h3>
+              <h3 class="more-products__subtitle">Витамины</h3>
               <div class="more-products__description products-text">
                 <p class="products-text__info">1 упаковка (30 г)</p>
                 <p class="products-text__number">300 Р.</p>
@@ -256,7 +257,7 @@
         </div>
       </section>
 
-      <section class="location">
+      <section class="location location--dark">
         <div class="location__description adress-text">
           <h2 class="visually-hidden">Наше местоположение.</h2>
           <p class="adress-text__title">Приглашаем к сотрудничеству дилеров!</p>
@@ -279,15 +280,21 @@
             </a>
           </div>
           <div class="main-footer__social social">
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
               </li>
             </ul>
           </div>
