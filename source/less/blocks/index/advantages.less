@@ -2,6 +2,11 @@
   margin-bottom: 49px;
 }
 
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
@@ -19,4 +24,31 @@
 
 .advantages__list {
   list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: 280px 280px;
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .advantages__list {
+    display: flex;
+  }
 }

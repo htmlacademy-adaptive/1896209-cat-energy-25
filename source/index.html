@@ -3,39 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-        <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+      <div class="main-header__wrapper">
+        <div class="main-header__block">
+          <a class="main-header__logo logo">
+            <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
+            <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -54,7 +59,9 @@
               </p>
               <img class="promo__logo" src="img/logo/logo-promo.svg" width="280" height="270" alt="Упаковка корма кэт-энерджи">
             </header>
-            <a class="promo__button" href="#">Подобрать программу</a>
+            <footer class="promo__footer">
+              <a class="promo__button" href="#">Подобрать программу</a>
+            </footer>
           </div>
         </section>
 
@@ -101,41 +108,45 @@
 
         <section class="example">
           <div class="example__wrapper">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__block-desc">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-            <div class="example__content">
-              <dl class="example__list">
-                <div class="example__item">
-                  <dt class="example__number">
-                    5 кг
-                  </dt>
-                  <dd class="example__description">
-                    снижение веса
-                  </dd>
-                </div>
-                <div class="example__item">
-                  <dt class="example__number">
-                    60 дней
-                  </dt>
-                  <dd class="example__description">
-                    затрачено времени
-                  </dd>
-                </div>
-              </dl>
-              <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+              <div class="example__content">
+                <dl class="example__list">
+                  <div class="example__item">
+                    <dt class="example__number">
+                      5 кг
+                    </dt>
+                    <dd class="example__description">
+                      снижение веса
+                    </dd>
+                  </div>
+                  <div class="example__item">
+                    <dt class="example__number">
+                      60 дней
+                    </dt>
+                    <dd class="example__description">
+                      затрачено времени
+                    </dd>
+                  </div>
+                </dl>
+                <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+              </div>
             </div>
 
-            <div class="example__range range">
-              <img class="range__image" src="img/range-image.png" alt="Полный кот">
-              <div class="range__scale">
-                <p class="range__text">было</p>
-                <div class="range__bar">
-                  <button class="range__toggle" type="button">
-                    <span class="visually-hidden">Посмотри, как изменится котик.</span>
-                  </button>
+            <div class="example__block-range">
+              <div class="example__range range">
+                <img class="range__image" src="img/range-image.png" alt="Полный кот">
+                <div class="range__scale">
+                  <p class="range__text">было</p>
+                  <div class="range__bar">
+                    <button class="range__toggle" type="button">
+                      <span class="visually-hidden">Посмотри, как изменится котик.</span>
+                    </button>
+                  </div>
+                  <p class="range__text">стало</p>
                 </div>
-                <p class="range__text">стало</p>
               </div>
             </div>
           </div>

@@ -1,3 +1,53 @@
+.location__description {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.location__map {
+  display: flex;
+  justify-content: center;
+}
+
 .location--dark {
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .location__description {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .location__map {
+    height: 400px;
+    background-image: url("../../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .location__image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    box-sizing: border-box;
+    background-image: url("../../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 400px;
+    padding-top: 95px;
+    padding-right: 638px;
+  }
+
+  .location__description {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .location__map {
+    display: none;
+  }
 }

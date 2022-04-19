@@ -1,5 +1,6 @@
 .site-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .site-list__item {
@@ -15,4 +16,22 @@
   text-decoration: none;
   list-style-type: none;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 478px;
+  }
+
+  .site-list__link {
+    color: #ffffff;
+  }
 }
