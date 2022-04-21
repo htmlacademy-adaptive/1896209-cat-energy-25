@@ -4,6 +4,11 @@
   padding-bottom: 40px;
 }
 
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
@@ -17,6 +22,12 @@
   margin: 0;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .example__number {
@@ -39,4 +50,32 @@
   color: #000000;
   margin-top: 20px;
   margin-bottom: 40px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .example__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .example__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

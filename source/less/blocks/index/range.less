@@ -1,5 +1,16 @@
+.range {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .range__image {
   margin-bottom: 15px;
+}
+
+.range__scale {
+  display: flex;
+  justify-content: center;
 }
 
 .range__text {
@@ -8,4 +19,10 @@
   text-transform: uppercase;
   margin: 0;
   color: #111111;
+}
+
+@media (min-width: @tablet-width) {
+  .range__image {
+    height: 511px;
+  }
 }
