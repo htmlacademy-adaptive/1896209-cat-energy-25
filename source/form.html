@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--other">
 
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-        <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
+      <div class="main-header__wrapper">
+        <div class="main-header__block">
+          <a class="main-header__logo logo">
+            <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
+            <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--dark">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--dark" href="#">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link site-list__link--dark" href="#">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -136,8 +140,10 @@
               </ul>
             </fieldset>
 
-            <input class="program__button" type="submit" value="Отправить заявку">
-            <p class="program__required">* — Обязательные поля</p>
+            <div class="program__form-button">
+              <input class="program__button" type="submit" value="Отправить заявку">
+              <p class="program__required">* — Обязательные поля</p>
+            </div>
 
           </form>
         </div>

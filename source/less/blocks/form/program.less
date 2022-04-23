@@ -1,3 +1,8 @@
+.program__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .program__button {
   font-family: inherit;
   font-size: 16px;
@@ -15,4 +20,29 @@
   margin-bottom: 32px;
   line-height: 16px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .program__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .program__form-button {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .program__form {
+    display: grid;
+    grid-template-columns: repeat(2, 568px);
+    grid-template-rows: repeat(4, 200px);
+    row-gap: 67px;
+  }
 }
