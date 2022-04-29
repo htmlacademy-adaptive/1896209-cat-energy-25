@@ -3,6 +3,24 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  position: relative;
+}
+
+.main-header__logo {
+  margin-top: 10px;
+}
+
+.main-header__logo-text {
+  margin-bottom: 6px;
+  margin-left: 53px;
+}
+
+.main-header__logo-tablet {
+  display: none;
+}
+
+.main-header__logo-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -15,6 +33,27 @@
 
   .main-header__logo {
     width: 174px;
+    margin-top: 24px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  .main-header__logo-image {
+    display: none;
+  }
+
+  .main-header__logo-text {
+    display: none;
+  }
+
+  .main-header__logo-tablet {
+    display: block;
   }
 
   .main-header__toggle {
@@ -30,6 +69,14 @@
 
   .main-header__logo {
     width: 202px;
+  }
+
+  .main-header__logo-tablet {
+    display: none;
+  }
+
+  .main-header__logo-desktop {
+    display: block;
   }
 
   .main-header__toggle {

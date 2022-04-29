@@ -1,10 +1,16 @@
 .more {
   padding: 20px 0;
+  padding-top: 40px;
 }
 
 .more__wrapper {
   width: 280px;
   margin: 0 auto;
+}
+
+.more__container {
+  min-height: 266px;
+  padding: 20px;
 }
 
 .more__title {
@@ -14,11 +20,27 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-left: 71px;
+  margin-top: 10px;
 }
 
 .more__description {
   font-family: "Arial", sans-serif;
-  margin: 22px 0;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 42px;
+  position: relative;
+}
+
+.more__description::after {
+  position: absolute;
+  content: "";
+  top: 113px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
 }
 
 .more__link {
@@ -28,12 +50,60 @@
   text-decoration: none;
   color: #000000;
   margin: 0;
+  padding-right: 49px;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 102px;
+  background-position-y: 6px;
+
+  &:hover {
+    background-image: url("../img/icon-arrow-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .more__wrapper {
     width: 708px;
     margin: 0 auto;
+  }
+
+  .more__container {
+    min-height: 372px;
+    text-align: left;
+    padding: 52px;
+    padding-top: 77px;
+  }
+
+  .more__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .more__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+    max-width: 340px;
+    min-height: 96px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .more__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 57px;
+    background-position: 127px 10px;
   }
 }
 
@@ -44,5 +114,23 @@
     display: grid;
     grid-template-columns: 570px 570px;
     column-gap: 80px;
+  }
+
+  .more__container {
+    min-height: 374px;
+    text-align: left;
+    padding: 52px;
+    padding-top: 77px;
+  }
+
+  .more__title {
+    margin-left: 162px;
+  }
+
+  .more__description {
+    max-width: 467px;
+    min-height: 72px;
+    margin-top: 73px;
+    margin-bottom: 27px;
   }
 }

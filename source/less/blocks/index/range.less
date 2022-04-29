@@ -11,6 +11,24 @@
 .range__scale {
   display: flex;
   justify-content: center;
+
+  &:hover {
+    .range__text {
+      border-bottom: 1px solid #00000040;
+    }
+  }
+
+  &:focus {
+    .range__text {
+      border-bottom: 1px dotted #00000040;
+    }
+  }
+
+  &:active {
+    .range__text {
+      border: 0;
+    }
+  }
 }
 
 .range__text {
@@ -21,8 +39,126 @@
   color: #111111;
 }
 
+.range__bar {
+  position: relative;
+  width: 85px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin: 0 13px;
+  margin-top: 3px;
+}
+
+.range__toggle {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 6px;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+  border: 0;
+}
+
 @media (min-width: @tablet-width) {
+  .range {
+    position: relative;
+    z-index: 2;
+    padding-top: 611px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 32px;
+      right: 0;
+      bottom: 0;
+      left: 59px;
+      width: 296px;
+      height: 511px;
+      background-image: url("../img/cat-fat-example.png");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 32px;
+      right: 0;
+      bottom: 0;
+      left: 355px;
+      width: 296px;
+      height: 511px;
+      background-image: url("../img/cat-skinny-example.png");
+      background-repeat: no-repeat;
+    }
+  }
+
   .range__image {
-    height: 511px;
+    display: none;
+  }
+
+  .range__scale {
+    &:hover {
+      .range__toggle {
+        box-shadow: 0 2px 4px #00000030;
+      }
+    }
+
+    &:active {
+      .range__toggle {
+        border: 1px solid #68b738;
+        box-shadow: 0 3px 5px #00000033;
+      }
+    }
+  }
+
+  .range__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .range__bar {
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 6px;
+    border: 0;
+    margin: 0 23px;
+    margin-top: 13px;
+  }
+
+  .range__toggle {
+    width: 34px;
+    height: 34px;
+    top: -16px;
+    left: 198px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px #00000029;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 38%;
+      left: 38%;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range {
+    padding-top: 499px;
+
+    &::before,
+    &::after {
+      top: -32px;
+    }
   }
 }

@@ -9,6 +9,26 @@
   justify-content: center;
 }
 
+.location__link {
+  position: relative;
+}
+
+.location__link::before {
+  position: absolute;
+  content: "";
+  top: 139px;
+  left: 134px;
+  width: 57px;
+  height: 53px;
+  background-image: url("../img/icon-map.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location__image {
+  display: block;
+}
+
 .location--dark {
   background-color: #f2f2f2;
 }
@@ -20,10 +40,18 @@
   }
 
   .location__map {
+    display: block;
     height: 400px;
     background-image: url("../img/map-tablet.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
+  }
+
+  .location__link::before {
+    top: 146px;
+    left: 333px;
+    width: 113px;
+    height: 106px;
   }
 
   .location__image {
@@ -39,6 +67,19 @@
     height: 400px;
     padding-top: 95px;
     padding-right: 638px;
+    position: relative;
+  }
+
+  .location::before {
+    position: absolute;
+    content: "";
+    top: 131px;
+    left: 908px;
+    width: 113px;
+    height: 106px;
+    background-image: url("../img/icon-map.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .location__description {
