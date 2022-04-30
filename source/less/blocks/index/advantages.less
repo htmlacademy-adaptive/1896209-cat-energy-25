@@ -16,15 +16,41 @@
   margin-bottom: 40px;
 }
 
+.advantages__list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .advantages__description {
   font-family: "Arial", sans-serif;
   margin: 0;
   margin-top: 20px;
+  min-height: 60px;
+  margin-left: 80px;
 }
 
-.advantages__list {
-  list-style-type: none;
-  padding: 0;
+.advantages__item--healthy {
+  background-image: url("../img/icon-healthy.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--powder {
+  background-image: url("../img/icon-powder.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--food {
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.advantages__item--time {
+  background-image: url("../img/icon-time.svg");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,10 +61,67 @@
 
   .advantages__list {
     display: grid;
-    grid-template-columns: repeat(2, min-content);
+    grid-template-columns: repeat(2, minmax(230px, 249px));
     grid-template-rows: 280px 280px;
     column-gap: 137px;
     row-gap: 37px;
+  }
+
+  .advantages__item {
+    background-position-y: 40px;
+    background-size: 80px 80px;
+    position: relative;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 151px;
+  }
+
+  .advantages__item--healthy::before {
+    position: absolute;
+    content: "1";
+    top: 0;
+    left: 118px;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .advantages__item--powder::before {
+    position: absolute;
+    content: "2";
+    top: 0;
+    left: 118px;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .advantages__item--food::before {
+    position: absolute;
+    content: "3";
+    top: 0;
+    left: 118px;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .advantages__item--time::before {
+    position: absolute;
+    content: "4";
+    top: 0;
+    left: 118px;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
   }
 }
 
