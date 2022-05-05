@@ -1,5 +1,5 @@
 .products-text {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .products-text__title {
@@ -9,6 +9,8 @@
   text-transform: uppercase;
   margin: 0;
   color: #222222;
+  max-width: 76px;
+  margin-bottom: 14px;
 }
 
 .products-text__info {
@@ -21,4 +23,42 @@
   font-family: "Arial", sans-serif;
   line-height: 14px;
   margin: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .products-text {
+    margin-bottom: 17px;
+  }
+
+  .products-text__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 155px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    margin-top: 34px;
+  }
+
+  .products-text__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .products-text__number {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-text {
+    margin: 0;
+  }
+
+  .products-text__info {
+    min-width: 132px;
+    margin-right: 110px;
+  }
 }

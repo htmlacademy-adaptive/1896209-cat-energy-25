@@ -1,6 +1,18 @@
 .pagination {
-  margin: 25px 0;
   display: block;
+  padding-top: 78px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+  }
 }
 
 .pagination__title {
@@ -26,4 +38,80 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #444444;
+  position: relative;
+  padding: 10px 94px;
+  border: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: -104px;
+    left: 124px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .pagination {
+    max-height: 429px;
+    padding-top: 161px;
+    padding-bottom: 38px;
+    margin-top: auto;
+    border: 2px solid #f2f2f2;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .pagination__title {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 134px;
+    margin: 0 auto;
+  }
+
+  .pagination__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-top: 23px;
+    margin-bottom: 87px;
+    max-width: 167px;
+  }
+
+  .pagination__button {
+    line-height: 0;
+    padding: 20px 78px;
+
+    &::before,
+    &::after {
+      top: -264px;
+      left: 92px;
+      width: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pagination__button {
+    padding: 20px 38px;
+
+    &::before,
+    &::after {
+      left: 52px;
+    }
+  }
 }
