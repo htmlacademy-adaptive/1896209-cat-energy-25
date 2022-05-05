@@ -9,7 +9,7 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 21px;
+  margin-bottom: 14px;
 }
 
 .form-checkbox__list {
@@ -19,7 +19,19 @@
 }
 
 .form-checkbox__item {
-  margin-top: 12px;
+  margin-top: 25px;
+}
+
+.form-checkbox__mark {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .form-checkbox__label {
@@ -27,13 +39,45 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  margin-left: 46px;
+  display: block;
+  padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
+  .form-checkbox {
+    margin-bottom: 54px;
+  }
+  
+  .form-checkbox__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
   .form-checkbox__list {
     display: grid;
     grid-template-columns: repeat(2, 221px);
     grid-template-rows: repeat(2, 40px);
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+
+  .form-checkbox__item {
+    margin: 0;
+  }
+
+  .form-checkbox__mark {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .form-checkbox__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 59px;
   }
 }
 

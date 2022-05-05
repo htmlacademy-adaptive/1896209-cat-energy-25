@@ -3,6 +3,7 @@
   margin: 0;
   padding-bottom: 20px;
   border: 0;
+  display: flex;
 }
 
 .form-comment__title {
@@ -18,10 +19,32 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e8e8e8;
+  padding: 0 12px;
+  padding-top: 10px;
+  flex-grow: 1;
+  height: 150px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-comment {
+    padding-bottom: 65px;
+  }
+
+  .form-comment__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form-comment__field {
+    height: 174px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-comment {
     grid-column: 1 / -1;
+    padding: 0;
   }
 }

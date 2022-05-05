@@ -16,6 +16,7 @@
 .form-contact__field-group {
   margin: 0;
   margin-top: 14px;
+  display: flex;
 }
 
 .form-contact__label {
@@ -23,6 +24,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-right: 12px;
+  align-self: center;
 }
 
 .form-contact__input {
@@ -31,12 +34,56 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #cdcdcd;
+  padding-left: 16px;
+  height: 45px;
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .form-contact {
+    margin-top: 55px;
+    margin-bottom: 65px;
+  }
+
+  .form-contact__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .form-contact__field-group {
+    margin-top: 20px;
+  }
+
+  .form-contact__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-contact__input {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-contact {
     grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 572px);
+    column-gap: 78px;
+    margin: 0;
+  }
+
+  .form-contact__title {
+    margin-bottom: 76px;
+  }
+
+  .form-contact__field-group {
+    margin: 0;
   }
 }

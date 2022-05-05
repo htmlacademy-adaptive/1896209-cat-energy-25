@@ -11,6 +11,8 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
+  border: 0;
+  padding: 10px 76px;
 }
 
 .program__required {
@@ -20,6 +22,7 @@
   margin-bottom: 32px;
   line-height: 16px;
   color: #000000;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,8 +31,26 @@
     margin: 0 auto;
   }
 
+  .program__form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .program__form-button {
     display: flex;
+    margin-bottom: 72px;
+  }
+
+  .program__button {
+    font-size: 20px;
+    padding: 0 65px;
+    height: 52px;
+    margin-right: 61px;
+  }
+
+  .program__required {
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -42,7 +63,23 @@
   .program__form {
     display: grid;
     grid-template-columns: repeat(2, 568px);
-    grid-template-rows: repeat(4, 200px);
+    grid-template-rows: repeat(4, min-content);
     row-gap: 67px;
+    column-gap: 80px;
+    padding: 0;
+    margin-top: 77px;
+  }
+
+  .program__form-button {
+    margin-bottom: 82px;
+  }
+
+  .program__button {
+    padding: 0 208px;
+    margin-right: 81px;
+  }
+
+  .program__required {
+    min-width: 180px;
   }
 }
