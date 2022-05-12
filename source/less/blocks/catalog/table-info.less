@@ -1,5 +1,45 @@
+.table-info {
+  min-width: 142px;
+}
+
 .table-info__text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+}
+
+.table-info__text--value {
+  text-align: right;
+  margin-left: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .table-info {
+    min-width: 250px;
+  }
+
+  .table-info__row {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 24px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #cdcdcd;
+    }
+  }
+
+  .table-info__text {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-info {
+    min-width: 180px;
+  }
 }

@@ -3,13 +3,26 @@
   margin: 0;
   margin-bottom: 34px;
   border: 0;
+  position: relative;
 }
 
 .form-checkbox__title {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 21px;
+  margin-bottom: 14px;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 163px;
+    width: 136px;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 }
 
 .form-checkbox__list {
@@ -19,7 +32,40 @@
 }
 
 .form-checkbox__item {
-  margin-top: 12px;
+  margin-top: 25px;
+}
+
+.form-checkbox__control:disabled {
+  opacity: 0.3;
+}
+
+.form-checkbox__input[type="checkbox"]:checked + .form-checkbox__mark::after {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.form-checkbox__mark {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bababa;
+    }
+  }
 }
 
 .form-checkbox__label {
@@ -27,13 +73,62 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  margin-left: 46px;
+  display: block;
+  padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
+  .form-checkbox {
+    margin-bottom: 54px;
+  }
+
+  .form-checkbox__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &::before {
+      top: 21px;
+      left: -28px;
+      width: 768px;
+    }
+  }
+
   .form-checkbox__list {
     display: grid;
     grid-template-columns: repeat(2, 221px);
     grid-template-rows: repeat(2, 40px);
+    row-gap: 32px;
+    column-gap: 123px;
+    padding-left: 40px;
+  }
+
+  .form-checkbox__item {
+    margin: 0;
+  }
+
+  .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__mark::after {
+    top: 11px;
+    left: 8px;
+    width: 24px;
+    height: 19px;
+    background-size: 24px 19px;
+  }
+
+  .form-checkbox__mark {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .form-checkbox__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 59px;
   }
 }
 
@@ -42,8 +137,16 @@
     grid-column: 1 / -1;
   }
 
+  .form-checkbox__title {
+    &::before {
+      left: -110px;
+      width: 1440px;
+    }
+  }
+
   .form-checkbox__list {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 }
