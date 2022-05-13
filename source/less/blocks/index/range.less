@@ -93,6 +93,18 @@
       background-image: url("../img/cat-skinny-example.png");
       background-repeat: no-repeat;
     }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/cat-fat-example@2x.png");
+        background-size: 296px auto;
+      }
+
+      &::after {
+        background-image: url("../img/cat-skinny-example@2x.png");
+        background-size: 296px auto;
+      }
+    }
   }
 
   .range__image {
