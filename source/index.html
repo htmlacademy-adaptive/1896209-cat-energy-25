@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/favicon-32x32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -11,10 +15,12 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo">
-          <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-          <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-          <img class="main-header__logo-tablet" src="img/logo/logo-header-tablet.svg" width="174" height="52" alt="Кэт-энерджи">
-          <img class="main-header__logo-desktop" src="img/logo/logo-header-desktop.svg" width="202" height="59" alt="Кэт-энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-header-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
+            <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -57,7 +63,7 @@
               <p class="promo__intro">
                 Занялся собой? Займись котом!
               </p>
-              <img class="promo__logo" src="img/logo/logo-promo.svg" width="280" height="270" alt="Упаковка корма кэт-энерджи">
+              <img class="promo__logo" src="img/logo/logo-promo.svg" srcset="img/logo/logo-promo@2x.png 2x" width="280" height="270" alt="Упаковка корма кэт-энерджи">
             </header>
             <footer class="promo__footer">
               <a class="promo__button" href="#">Подобрать программу</a>
@@ -137,7 +143,7 @@
 
             <div class="example__block-range">
               <div class="example__range range">
-                <img class="range__image" src="img/range-image.png" alt="Полный кот">
+                <img class="range__image" src="img/range-image.png" srcset="img/range-image@2x.png 2x" width="280" height="232" alt="Полный кот">
                 <div class="range__scale">
                   <p class="range__text">было</p>
                   <div class="range__bar">

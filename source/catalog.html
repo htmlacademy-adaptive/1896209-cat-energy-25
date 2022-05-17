@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/favicon-32x32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body page__body--other">
@@ -11,10 +15,12 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo">
-          <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-          <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-          <img class="main-header__logo-tablet" src="img/logo/logo-header-tablet.svg" width="174" height="52" alt="Кэт-энерджи">
-          <img class="main-header__logo-desktop" src="img/logo/logo-header-desktop.svg" width="202" height="59" alt="Кэт-энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-header-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
+            <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -49,7 +55,10 @@
           <h2 class="base-products__title">Каталог продукции</h2>
           <ul class="base-products__list">
             <li class="base-products__card">
-              <img class="base-products__image" src="img/base-products/cat-energy-pro-chicken-500.png" alt="Корм с курицей 500гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-pro-chicken-500-tablet-desktop.png">
+                <img class="base-products__image" src="img/base-products/cat-energy-pro-chicken-500.png" srcset="img/base-products/cat-energy-pro-chicken-500@2x.png 2x" alt="Корм с курицей 500гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Pro 500 г</h3>
                 <table class="products-text__table table-info">
@@ -71,7 +80,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-pro-chicken-1000.png" alt="Корм с курицей 1000гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-pro-chicken-1000-tablet-desktop.png">
+                <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-pro-chicken-1000.png" srcset="img/base-products/cat-energy-pro-chicken-1000@2x.png 2x" alt="Корм с курицей 1000гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Pro 1000 г</h3>
                 <table class="products-text__table table-info">
@@ -93,7 +105,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image" src="img/base-products/cat-energy-pro-fish-500.png" alt="Корм с рыбой 500гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-pro-fish-500-tablet-desktop.png">
+                <img class="base-products__image" src="img/base-products/cat-energy-pro-fish-500.png" srcset="img/base-products/cat-energy-pro-fish-500@2x.png 2x" alt="Корм с рыбой 500гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Pro 500 г</h3>
                 <table class="products-text__table table-info">
@@ -115,7 +130,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-pro-fish-1000.png" alt="Корм с рыбой 1000гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-pro-fish-1000-tablet-desktop.png">
+                <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-pro-fish-1000.png" srcset="img/base-products/cat-energy-pro-fish-1000@2x.png 2x" alt="Корм с рыбой 1000гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Pro 1000 г</h3>
                 <table class="products-text__table table-info">
@@ -137,7 +155,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image" src="img/base-products/cat-energy-slim-buckwheat-500.png" alt="Корм с гречкой 500гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-slim-buckwheat-500-tablet-desktop.png">
+                <img class="base-products__image" src="img/base-products/cat-energy-slim-buckwheat-500.png" srcset="img/base-products/cat-energy-slim-buckwheat-500@2x.png 2x" alt="Корм с гречкой 500гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Slim 500 г</h3>
                 <table class="products-text__table table-info">
@@ -159,7 +180,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-slim-buckwheat-1000.png" alt="Корм с гречкой 1000гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-slim-buckwheat-1000-tablet-desktop.png">
+                <img class="base-products__image base-products__image--big" src="img/base-products/cat-energy-slim-buckwheat-1000.png" srcset="img/base-products/cat-energy-slim-buckwheat-1000@2x.png 2x" alt="Корм с гречкой 1000гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Slim 1000 г</h3>
                 <table class="products-text__table table-info">
@@ -181,7 +205,10 @@
               <a class="base-products__button" href="#">Заказать</a>
             </li>
             <li class="base-products__card">
-              <img class="base-products__image" src="img/base-products/cat-energy-slim-rice-500.png" alt="Корм с рисом 500гр">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/base-products/cat-energy-slim-rice-500-tablet-desktop.png">
+                <img class="base-products__image" src="img/base-products/cat-energy-slim-rice-500.png" srcset="img/base-products/cat-energy-slim-rice-500@2x.png 2x" alt="Корм с рисом 500гр">
+              </picture>
               <div class="base-products__description products-text">
                 <h3 class="products-text__title">Cat Energy Slim 500 г</h3>
                 <table class="products-text__table table-info">
