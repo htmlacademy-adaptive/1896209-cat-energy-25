@@ -15,10 +15,12 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo">
-          <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-          <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-          <img class="main-header__logo-tablet" src="img/logo/logo-header-tablet.svg" width="174" height="52" alt="Кэт-энерджи">
-          <img class="main-header__logo-desktop" src="img/logo/logo-header-desktop.svg" width="202" height="59" alt="Кэт-энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-header-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
+            <img class="main-header__logo-text" src="img/logo/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
