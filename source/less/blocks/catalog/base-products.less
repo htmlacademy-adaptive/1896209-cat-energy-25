@@ -33,6 +33,7 @@
   grid-template-rows: 112px 40px;
   row-gap: 25px;
   position: relative;
+  align-items: center;
 
   &::before {
     position: absolute;
@@ -45,10 +46,10 @@
   }
 }
 
-// .base-products__image {
-//   margin: 0 auto;
-//   align-self: center;
-// }
+.base-products__image {
+  display: block;
+  margin: 0 auto;
+}
 
 .base-products__button {
   font-size: 16px;
@@ -59,6 +60,7 @@
   background-color: #68b738;
   grid-column: 1 / -1;
   text-align: center;
+  height: 40px;
   padding-top: 10px;
 
   &:hover {
