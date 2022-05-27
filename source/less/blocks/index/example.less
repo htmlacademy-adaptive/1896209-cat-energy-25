@@ -102,15 +102,26 @@
     top: 608px;
     width: 100%;
     min-height: 462px;
-    background-image: url("../img/background/example-background.svg");
+    background-image: url("../img/example-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
   }
 
+  .example::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #e6e6e6;
+  }
+
   .example__wrapper {
     width: 708px;
     margin: 0 auto;
+    position: relative;
   }
 
   .example__block-range {
@@ -174,12 +185,16 @@
 @media (min-width: @desktop-width) {
   .example {
     padding-top: 69px;
-    padding-bottom: 65px;
+    padding-bottom: 59px;
   }
 
   .example::before {
     top: 227px;
     opacity: 60%;
+  }
+
+  .example::after {
+    display: none;
   }
 
   .example__wrapper {
