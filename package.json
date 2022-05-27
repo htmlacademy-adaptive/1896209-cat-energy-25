@@ -49,5 +49,9 @@
   "engines": {
     "node": "^16"
   },
+  "typeRoots": [
+    "../node_modules/@types",
+    "../@types"
+  ],
   "type": "module"
 }
