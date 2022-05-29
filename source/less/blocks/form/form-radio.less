@@ -1,6 +1,6 @@
 .form-radio {
-  padding: 0;
   margin: 0;
+  padding: 0 20px;
   padding-top: 8px;
   padding-bottom: 20px;
   border: 0;
@@ -9,11 +9,10 @@
   &::before {
     position: absolute;
     content: "";
-    top: 183px;
-    left: -20px;
+    top: 164px;
     right: 0;
     height: 1px;
-    width: 320px;
+    width: 100%;
     background-color: #d9d9d9;
   }
 }
@@ -25,7 +24,7 @@
 }
 
 .form-radio__item {
-  margin-top: 25px;
+  margin-top: 21px;
   position: relative;
 }
 
@@ -74,6 +73,7 @@
 @media (min-width: @tablet-width) {
   .form-radio {
     padding-left: 40px;
+    margin-top: 51px;
 
     &::before {
       display: none;
