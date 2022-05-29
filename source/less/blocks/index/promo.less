@@ -115,15 +115,26 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    background-image: url("../img/logo-promo-desktop.png");
-    background-size: 552px 499px;
-    background-position-x: 558px;
-    background-position-y: 32px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 28px;
+      left: calc((100vw - 323px) / 2);
+      width: 552px;
+      height: 500px;
+      background-image: url("../img/logo-promo-desktop.png");
+      background-size: 552px 499px;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-resolution: 2dppx) {
     .promo {
-      background-image: url("../img/logo-promo-desktop@2x.png");
+      &::before {
+        background-image: url("../img/logo-promo-desktop@2x.png");
+      }
     }
   }
 
@@ -134,11 +145,13 @@
 
   .promo__header {
     padding-top: 110px;
+    margin-left: 81px;
   }
 
   .promo__footer {
     background-image: none;
     height: min-content;
-    padding-bottom: 309px;
+    padding-bottom: 294px;
+    margin-left: 83px;
   }
 }

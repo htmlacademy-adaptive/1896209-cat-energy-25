@@ -166,11 +166,19 @@
 
 @media (min-width: @desktop-width) {
   .range {
-    padding-top: 499px;
+    padding-top: 511px;
 
     &::before,
     &::after {
       top: -32px;
+    }
+
+    &::before {
+      left: -10px;
+    }
+
+    &::after {
+      left: 286px;
     }
   }
 }

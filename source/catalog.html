@@ -15,12 +15,13 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo">
-          <img class="main-header__logo-image" src="img/logo-image-phone.svg" width="34" height="38" alt="Супер-кот">
-          <img class="main-header__logo-text" src="img/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
-          <img class="main-header__logo-tablet" src="img/logo-header-tablet.svg" width="174" height="52" alt="Кэт-энерджи">
-          <img class="main-header__logo-desktop" src="img/logo-header-desktop.svg" width="202" height="59" alt="Кэт-энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-header-tablet.svg">
+            <img class="main-header__image" src="img/logo-header-mobile.svg" width="191" height="39" alt="логотип Кэт энерджи">
+          </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
@@ -273,15 +274,15 @@
               <a class="more-products__button" href="#">Заказать</a>
             </li>
           </ul>
-          <div class="advertisement">
+          <div class="products-show">
             <h2 class="visually-hidden">Подарок при заказе.</h2>
-            <p class="advertisement__info">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="products-show__info">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
 
       <section class="location location--dark">
-        <div class="location__description adress-text">
+        <div class="location__description adress-text adress-text--dark">
           <h2 class="visually-hidden">Наше местоположение.</h2>
           <p class="adress-text__title">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="adress-text__subtitle">ул. Большая
@@ -299,7 +300,7 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
             <a class="main-footer__logo-link">
-              <img class="main-footer__logo-text" src="img/logo-text-phone.svg" width="101" height="18" alt="Кэт-энерджи">
+              <img class="main-footer__logo-text" src="img/logo-text-footer.svg" width="101" height="18" alt="Кэт-энерджи">
             </a>
           </div>
           <div class="main-footer__social social">
